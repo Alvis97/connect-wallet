@@ -4,6 +4,7 @@ import React from 'react'
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import WalletInfo from './WalletInfo';
+import TokenInfo from './TokenInfo';
 
 function ConnectedComponent() {
     const { connection } = useConnection();
@@ -12,6 +13,7 @@ function ConnectedComponent() {
   return (
     <div>
       <WalletInfo />
+      <TokenInfo />
     </div>
   )
 }

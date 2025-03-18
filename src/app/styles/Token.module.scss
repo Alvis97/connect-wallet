@@ -1,0 +1,120 @@
+.tokenComponent{
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    overflow: scroll;
+    height: 150px;
+
+    p{
+        margin: 5px 0 5px 0;
+    }
+}
+
+.tokenDiv{
+
+}
+
+.hr{
+    margin: 20px 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0.1px solid rgb(var(--text-color));
+
+}
+
+.span{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+    padding: 0;
+
+    p{
+        margin-right: 10px;
+    }
+}
+
+.mint{
+    cursor: pointer;
+    border: 0.5px solid rgb(var(--text-color));
+    padding: 10px;
+    border-radius: 12px;
+    margin-right: 20px;
+    width: fit-content;
+    justify-content: space-between;
+}
+
+.copied{
+    position:inherit;
+    background-color: white;
+    color: rgb(var(--darkBlue));
+    height: 30px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+.btnDiv{
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.select {
+    cursor: pointer;
+    border: 0.5px solid rgb(var(--text-color));
+    padding: 10px;
+    border-radius: 12px;
+    margin: 10px 0;
+    width: 100%;
+    background-color: rgb(var(--background-color), 0.5 );
+    color: rgb(var(--darkBlue));
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    appearance: none; /* Removes default browser styles */
+    -webkit-appearance: none; /* Removes default styles in Safari */
+    -moz-appearance: none; /* Removes default styles in Firefox */
+}
+
+/* Fix the grey/green highlight after selection */
+.select:focus,
+.select:active {
+    border-color: rgb(var(--darkBlue));
+    background-color: white !important; /* Ensure background remains white */
+    color: rgb(var(--darkBlue)) !important; /* Ensure text color stays consistent */
+    appearance: none; /* Removes default browser styles */
+    -webkit-appearance: none; /* Removes default styles in Safari */
+    -moz-appearance: none; /* Removes default styles in Firefox */
+}
+
+/* When hovering over the dropdown */
+.select:hover {
+    background-color: rgba(var(--darkBlue), 0.1);
+
+}
+
+/* When clicking on the dropdown */
+.select:focus {
+    border-color: rgb(var(--darkBlue));
+    background-color: rgba(var(--darkBlue), 0.2);
+    appearance: none; /* Removes default browser styles */
+    -webkit-appearance: none; /* Removes default styles in Safari */
+    -moz-appearance: none; /* Removes default styles in Firefox */
+}
+
+/* Dropdown options */
+.select option {
+    background-color: white;
+    color: rgb(var(--darkBlue));
+    font-size: 16px;
+    padding: 5px;
+    appearance: none; /* Removes default browser styles */
+    -webkit-appearance: none; /* Removes default styles in Safari */
+    -moz-appearance: none; /* Removes default styles in Firefox */
+}
