@@ -1,0 +1,23 @@
+.navbar{
+    background-color: rgb(var(--background-color));
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logo{
+    color: rgb(var(--text-color));
+}
+
+.toggleBtn{
+    margin: 0 20px;
+}
+
+
+
+
+
