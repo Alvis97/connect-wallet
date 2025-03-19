@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+
 @import "@solana/wallet-adapter-react-ui/styles.css";
 
 /* Dark mode */
@@ -24,6 +27,7 @@
 body {
   background-color: rgb(var(--background-color));
   color: var(--text-color);
+  font-family: "Inter", sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -35,10 +39,10 @@ h1{
 .component{
   background-color: rgb(var(--div-background));
   color: rgb(var(--text-color));
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
   text-align: center;
-  min-height: 350px;
+  min-height: 400px;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -66,6 +70,12 @@ p{
   font-size: 17px;
   transform: scale(1.); /* Slight scale-up effect */
   box-shadow: 7px 7px 20px -5px rgb(var(--darkBlue));
+}
+
+.walletDiv{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
 }
 
 html,

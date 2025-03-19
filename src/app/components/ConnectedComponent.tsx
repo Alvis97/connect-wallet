@@ -11,7 +11,8 @@ function ConnectedComponent() {
     const { publicKey } = useWallet();
 
   return (
-    <div>
+    <div className='walletDiv'>
+
       <WalletInfo />
       <TokenInfo />
     </div>

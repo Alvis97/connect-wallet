@@ -10,9 +10,6 @@
     }
 }
 
-.tokenDiv{
-
-}
 
 .hr{
     margin: 20px 0;
@@ -86,7 +83,7 @@
 .select:focus,
 .select:active {
     border-color: rgb(var(--darkBlue));
-    background-color: white !important; /* Ensure background remains white */
+    background-color: rgb(var(--background-color), 0.5);/* Ensure background remains white */
     color: rgb(var(--darkBlue)) !important; /* Ensure text color stays consistent */
     appearance: none; /* Removes default browser styles */
     -webkit-appearance: none; /* Removes default styles in Safari */
@@ -102,7 +99,7 @@
 /* When clicking on the dropdown */
 .select:focus {
     border-color: rgb(var(--darkBlue));
-    background-color: rgba(var(--darkBlue), 0.2);
+    background-color: rgba(var(--background-color), 0.5);
     appearance: none; /* Removes default browser styles */
     -webkit-appearance: none; /* Removes default styles in Safari */
     -moz-appearance: none; /* Removes default styles in Firefox */
@@ -110,7 +107,6 @@
 
 /* Dropdown options */
 .select option {
-    background-color: white;
     color: rgb(var(--darkBlue));
     font-size: 16px;
     padding: 5px;
